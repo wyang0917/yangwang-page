@@ -1,0 +1,87 @@
+/* header */
+.container .header{
+  width: 80%;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.container .header ul{
+  display:flex;
+  list-style-type: none;
+}
+
+.container .header ul li{
+  margin-right: 50px;
+  padding: 5px;
+}
+/* a tag */
+.container a{
+  text-decoration: none;
+  color: var(--primary-font-light-color);
+  transition: transform 0.3s;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container.dark a{
+  color: var(--primary-font-dark-color);
+}
+
+.container a:hover{
+  cursor: pointer;
+  user-select: none;
+  color:var(--primary-color);
+}
+/* button tag */
+.button {
+  font-size: 1rem;
+  border: none;
+  background-color: var(--primary-dark-color);
+  color: var(--primary-font-dark-color);
+  border-radius: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.container.dark .button{
+  background-color: var(--primary-light-color);
+  color: var(--primary-font-light-color);
+}
+
+.button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* description */
+
+.container .description{
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  justify-content: center;
+  align-items:flex-start ;
+}
+
+.container .description h1{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .description h2,
+.container .description h3
+{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .description p{
+  font-size: 1.5rem;
+  position: relative;
+  opacity: 0;
+  left: 100px;
+  transition: opacity 2s, left 2s;
+}
+

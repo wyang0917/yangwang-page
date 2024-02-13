@@ -1,0 +1,54 @@
+#project{
+  height: 100vh;
+  width: 80%;
+}
+#project h3 {
+  font-size: 2rem;
+  margin: 60px;
+}
+#project .project-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#project .project-content p{
+  font-size: 1.2rem;
+  margin: 30px;
+}
+#project .project-content .slides-container .slide{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+#project .project-content .slides-container .slide .project-text{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+}
+
+#project .project-content img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#project .project-content .slides-container .slide-control{
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#project .project-content .slides-container .slide-control .active{
+  color: var(--primary-color);
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(235, 94, 40,0.5);
+}
+#project .project-content .slides-container .slide-control span:hover{
+  cursor: pointer;
+}

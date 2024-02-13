@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yang Wang</title>
+    <link rel="icon" href="/img/dun-circle.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/0d4e2bcacb.js" crossorigin="anonymous"></script>
+  </head>
+  <body onscroll="scrollBtn()">
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <nav>
+          <ul class="nav-link">
+            <li>
+              <a href="#about">About Me</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#skill">Skills</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a class="resume" href="/YangWang.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">
+          Nox!!
+        </button>
+        
+      </div>
+      <div class="description">
+        <h1>Hi, My name is</h1>
+        <h2>Yang Wang</h2>
+        <h3>I am a Web Developer</h3>
+        <p>Welcome to my Website!</p>        
+      </div>
+      <!-- about me -->
+      <div id="about">
+        <h3>About Me</h3>
+        <div class="about-content">
+          <div class="about-img"><img src="/img/yangwang.PNG" alt="yangwang"></div>
+          <div class="about-text">
+            <p>
+              I'm Young, a proactive and self-motivated developer with a proven ability and extensive experience gained from various projects. I am aspiring to become a full-stack developer.Thank you!
+            </p>
+          </div>
+        </div>  
+      </div>
+      <!-- projects -->
+      <div id="project">
+        <h3>Projects</h3>
+        <div class="project-content">
+          <p>Some Things I've Built</p>
+          <div class="slides-container">
+            <div class="slide">
+              <img src="/img/memory-game.PNG" alt="flip-game">
+              <div class="project-text"><a href="https://wyang0917.github.io/flip-card-memory-game/" target="_blank">Memory Game</a></div>
+            </div>
+            <div class="slide">
+              <img src="/img/TopSocial.PNG" alt="TopSocial">
+              <div class="project-text"><a href="https://github.com/wyang0917" target="_blank">TopSocial</a></div>
+            </div>
+            <div class="slide-control">
+              <span onclick="toggleProject(1)">Project 1</span>
+              / 
+              <span onclick="toggleProject(2)">Project 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skill">
+        <h3>Skills</h3>
+        <div class="cards-container">
+          <div class="card">
+            <img class="card-img" src="/img/html5.png" alt="HTML5">
+            <span>HTML5</span>
+          </div>
+          <div class="card">
+            <img class="card-img" src="/img/css.png" alt="CSS3">
+            <span>CSS3</span>
+          </div>
+          <div class="card">
+            <img class="card-img" src="/img/JavaScript.png" alt="JAVASCRIPT">
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="card">
+            <img class="card-img" src="/img/react.png" alt="REACT JS">
+            <span>REACT JS</span>
+          </div>
+          <div class="card">
+            <img class="card-img" src="/img/nodejs.png" alt="NODE JS">
+            <span>NODE JS</span>
+          </div>
+          <div class="card">
+            <img class="card-img" src="/img/github.png" alt="GIT/GITHUB">
+            <span>GIT/GITHUB</span>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <h3>Contact
+          <span></span>
+        </h3>
+        <p>I'm Young, a proactive and self-motivated developer with a proven ability and extensive experience gained from various projects. I am aspiring to become a full-stack developer.Thank you!</p>
+        <p>Contact me to find out more about my skills and work availability.</p>
+        <div class="social">
+          <a href="https://github.com/wyang0917" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/yangwang755/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:yangwang0917@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Designed & Built By Yang Wang</p>
+      </div>
+      <button id="topBtn" onclick="topFunction()" title="Back to top"><i class="fa-solid fa-angles-up"></i></button>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

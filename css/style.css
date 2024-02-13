@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('/css/header.css');
+@import url('/css/about.css');
+@import url('/css/projects.css');
+@import url('/css/skills.css');
+@import url('/css/contact.css');
+
+:root{
+  --primary-light-color:rgb(255, 252, 242);
+  --primary-dark-color:rgb(37, 36, 34);
+  --primary-font-light-color:rgb(64, 61, 57);
+  --primary-font-dark-color:rgb(204, 197, 185);
+  --primary-color:rgb(235, 94, 40);
+}
+
+*,
+body{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+.container{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  color: var(--primary-font-color);
+  background-color: var(--primary-light-color);
+}
+
+.container.dark{
+  color: var(--primary-font-dark-color);
+  background-color: var(--primary-dark-color);
+}
+
+body::-webkit-scrollbar {
+  width: 10px; 
+}
+
+/* 滚动条轨道 */
+body::-webkit-scrollbar-track {
+  background:var(--primary-font-light-color); 
+}
+
+/* 滚动条滑块 */
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-font-dark-color);  
+  border-radius: 5px; 
+}
+
+/* 滚动条滑块悬停状态 */
+body::-webkit-scrollbar-thumb:hover {
+  background:var(--primary-color); 
+}
+
+#topBtn{
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  outline: none;
+  background-color: var(--primary-dark-color);
+  color: var(--primary-font-dark-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+#topBtn:hover{
+  background-color: var(--primary-color);
+}
+
+.container.dark #topBtn{
+  background-color: var(--primary-light-color);
+  color: var(--primary-font-light-color);
+}
+.container.dark #topBtn:hover{
+  background-color: var(--primary-color);
+}
+
+.footer{
+  margin-bottom: 1rem;
+}

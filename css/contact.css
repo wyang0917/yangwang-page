@@ -1,0 +1,27 @@
+#contact{
+  height: 90vh;
+  width: 80%;
+}
+#contact h3 {
+  font-size: 2rem;
+  margin: 60px;
+  text-align: center;
+}
+#contact p{
+  font-size: 1.2rem;
+}
+#contact .social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+}
+
+#contact .social i{
+  font-size:3rem ;
+  padding: 1rem;
+}
+
+#contact span{
+  color: var(--primary-color);
+}
