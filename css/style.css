@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('/css/header.css');
-@import url('/css/about.css');
-@import url('/css/projects.css');
-@import url('/css/skills.css');
-@import url('/css/contact.css');
+@import url('./css/header.css');
+@import url('./css/about.css');
+@import url('./css/projects.css');
+@import url('./css/skills.css');
+@import url('./css/contact.css');
 
 :root{
   --primary-light-color:rgb(255, 252, 242);
